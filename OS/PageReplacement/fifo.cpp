@@ -54,4 +54,8 @@ int main()
             }
         }
     }
+
+    cout << endl;
+    cout << "Page Fault: " << page_fault << endl;
+    cout << "Page Hit: " << pages_size - page_fault << endl;
 }
