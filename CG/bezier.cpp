@@ -14,9 +14,9 @@ int main() {
 	int line_x=180, line_y=360;
 	double put_x, put_y;
 
-
 	initgraph(&gdriver, &gmode, "c:\\tc\\bgi");
 	setfillstyle(SOLID_FILL, 11);
+
 	for(float t=0.0; t<1.00; t+=0.001) {
 		put_x = get_coordinate(t, x1, x2, x3, x4);
 		put_y = get_coordinate(t, y1, y2, y3, y4);
