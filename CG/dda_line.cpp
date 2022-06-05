@@ -51,7 +51,7 @@ int main() {
     plot_point.y += increment.y;
   }
 
-  delay(50000);
+  delay(3600);
   closegraph();
 
   return 0;
