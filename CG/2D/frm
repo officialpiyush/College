@@ -1,0 +1,10 @@
+tsn - add x&y
+r: xn,yn = cs/sc*o
+scal: n = sx0,0sy*o - x mult sx, y mult sy
+
+tsn: end tsx, ty, tz, fall 1, add tx resp
+r: 
+~x: y=y.c-z.s,z=y.s+z.c
+~y: x=z.s+x.c,z=y.x-x.s
+~z: x=x.c-y.s,y=x.s+y.c
+scal: muly sx resp
