@@ -11,7 +11,7 @@ struct Process {
 };
 
 int main() {
-    int process_number=3, total_processes=3, time_quantum, i=0, cpu_run_time=0;
+    int process_number, total_processes=3, time_quantum, i=0, cpu_run_time=0;
     int total_turnaround_time=0, total_waiting_time=0;
 
     cout << "Enter Time Quantumn: ";
