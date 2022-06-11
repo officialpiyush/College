@@ -1,5 +1,3 @@
-// CPP program to demonstrate optimal page
-// replacement algorithm.
 #include <bits/stdc++.h>
 using namespace std;
 

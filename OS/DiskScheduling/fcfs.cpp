@@ -1,11 +1,13 @@
 #include <iostream>
 using namespace std;
+
+// disk access time= seek time+rotation latency+transfer time
 int main()
 {
   int size=0;
   cout<<"enter number of operations: "<<endl;
   cin>>size;
-  int input_seq[size];
+  int *input_seq = new int[size];
   cout<<"Enter seq of arrival:"<<endl;
   int sum=0;
   for(int i=0;i<size;i++)
