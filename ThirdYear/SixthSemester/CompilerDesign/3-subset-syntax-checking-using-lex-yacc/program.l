@@ -1,5 +1,7 @@
+%option noyywrap
+
 %{
-  #include "yy.tab.h";
+  #include "y.tab.h"
 %}
 
 digit [0-9]
@@ -35,6 +37,3 @@ ws [ \t]
 }
 %%
 
-int yywrap() {
-    return 1;
-}

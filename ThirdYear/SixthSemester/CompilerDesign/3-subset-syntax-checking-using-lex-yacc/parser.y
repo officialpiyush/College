@@ -1,10 +1,5 @@
 %{
   #include <stdio.h>
-
-  int yyerror(char* error) {
-    fprintf(stderr, "Error: %s\n", error);
-    return 0;
-  }
 %}
 
 %token INTEGER
@@ -14,10 +9,18 @@
 %token RPAREN
 
 %%
-expr : INTEGER | expr PLUS expr | expr TIMES expr | LPAREN expr RPAREN;
+expr : INTEGER 
+     | expr PLUS expr 
+     | expr TIMES expr 
+     | LPAREN expr RPAREN
+     ;
 %%
 
 int main(int argc, char** argv) {
-  yylex();
+  yyparse();
   return 0;
+}
+
+void yyerror(const char *s) {
+    printf("Syntax error: %s\n", s);
 }
