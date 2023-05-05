@@ -4,7 +4,7 @@
 
 digit [0-9]
 number {digit}+
-ws { \t}
+ws [ \t]
 
 %%
 {number}+ {
