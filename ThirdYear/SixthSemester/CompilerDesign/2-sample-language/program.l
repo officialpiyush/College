@@ -15,7 +15,7 @@
   printf("Identifier: %s\n", yytext);
 }
 
-[\+\-\*/] {
+[\+\-\*/=] {
   printf("Operator: %s\n", yytext);
 }
 
