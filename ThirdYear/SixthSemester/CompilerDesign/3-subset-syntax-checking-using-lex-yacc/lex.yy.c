@@ -743,44 +743,43 @@ case 3:
 YY_RULE_SETUP
 #line 19 "program.l"
 {
-  printf("Add");
   return PLUS;   
 }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 24 "program.l"
+#line 23 "program.l"
 {
   return TIMES;
 }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 28 "program.l"
+#line 27 "program.l"
 {
   return LPAREN;
 }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 32 "program.l"
+#line 31 "program.l"
 {
   return RPAREN;
 }
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 36 "program.l"
+#line 35 "program.l"
 {
   fprintf(stderr, "Invalid Character Found: %s\n", yytext);
 }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 39 "program.l"
+#line 38 "program.l"
 ECHO;
 	YY_BREAK
-#line 783 "lex.yy.c"
+#line 782 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1785,7 +1784,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 39 "program.l"
+#line 38 "program.l"
 
 
 

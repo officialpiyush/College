@@ -1,0 +1,3 @@
+flex program.l
+yacc -d parser.y // generates header file (y.tab.*)
+gcc -o lang-syntax y.tab.c lex.yy.c 

@@ -1304,7 +1304,7 @@ yyreturnlab:
   return yyresult;
 }
 
-#line 21 "parser.y"
+#line 17 "parser.y"
 
 
 int main(int argc, char** argv) {
@@ -1315,4 +1315,3 @@ int main(int argc, char** argv) {
 void yyerror(const char *s) {
     printf("Syntax error: %s\n", s);
 }
-
