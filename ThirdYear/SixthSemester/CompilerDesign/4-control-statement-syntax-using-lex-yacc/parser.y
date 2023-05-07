@@ -9,6 +9,9 @@
 %token SMALLER_THAN GREATER_THAN
 
 %%
+if_statement : IF compare_paren LCURLY RCURLY
+             ;
+
 compare_paren : LPAREN compare_exp RPAREN
               ;
 
