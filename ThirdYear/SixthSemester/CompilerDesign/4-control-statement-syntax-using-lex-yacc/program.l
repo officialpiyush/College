@@ -40,7 +40,7 @@ ws [ \t]
   return LCURLY;
 }
 
-"{" {
+"}" {
   return RCURLY;
 }
 
