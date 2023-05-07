@@ -20,6 +20,10 @@ ws [ \t]
   return IF;
 }
 
+"else" {
+  return ELSE;
+}
+
 ">" {
   return GREATER_THAN;
 }
